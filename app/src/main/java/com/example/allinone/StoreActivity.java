@@ -853,6 +853,7 @@ public class StoreActivity extends AppCompatActivity {
                 arrayList_name.add("Mr Right");
                 arrayList_name.add("House Joy");
                 arrayList_name.add("Quickr");
+                arrayList_name.add("Just Dial");
 
                 arrayList_url = new ArrayList<>();
                 arrayList_url.add("https://www.urbancompany.com/");
@@ -860,6 +861,7 @@ public class StoreActivity extends AppCompatActivity {
                 arrayList_url.add("https://www.mrright.in/");
                 arrayList_url.add("https://www.housejoy.in/");
                 arrayList_url.add("https://www.quikr.com/services/services-bangalore-all");
+                arrayList_url.add("https://www.justdial.com/");
 
                 arrayList_logo = new ArrayList<>();
                 arrayList_logo.add(R.drawable.urbancompany);
@@ -867,6 +869,7 @@ public class StoreActivity extends AppCompatActivity {
                 arrayList_logo.add(R.drawable.mrright);
                 arrayList_logo.add(R.drawable.housejoy);
                 arrayList_logo.add(R.drawable.quickr);
+                arrayList_logo.add(R.drawable.jd);
 
                 storeGridViewAdapter = new StoreGridViewAdapter(arrayList_logo, arrayList_name);
                 gridView.setAdapter(storeGridViewAdapter);
@@ -1016,6 +1019,147 @@ public class StoreActivity extends AppCompatActivity {
                 arrayList_logo.add(R.drawable.ixigo_train);
                 arrayList_logo.add(R.drawable.railyatri);
                 arrayList_logo.add(R.drawable.confirmtkt);
+
+                storeGridViewAdapter = new StoreGridViewAdapter(arrayList_logo, arrayList_name);
+                gridView.setAdapter(storeGridViewAdapter);
+                gridViewItemClickListener();
+                break;
+
+            case "Cricket & Sports":
+                arrayList_name = new ArrayList<>();
+                arrayList_name.add("IPL");
+                arrayList_name.add("Cric Buzz");
+                arrayList_name.add("ESPN CricInfo");
+
+                arrayList_url = new ArrayList<>();
+                arrayList_url.add("https://www.iplt20.com/");
+                arrayList_url.add("https://www.cricbuzz.com/");
+                arrayList_url.add("https://www.espncricinfo.com/");
+
+                arrayList_logo = new ArrayList<>();
+                arrayList_logo.add(R.drawable.ipl);
+                arrayList_logo.add(R.drawable.cricbuzz);
+                arrayList_logo.add(R.drawable.espncricinfo);
+
+                storeGridViewAdapter = new StoreGridViewAdapter(arrayList_logo, arrayList_name);
+                gridView.setAdapter(storeGridViewAdapter);
+                gridViewItemClickListener();
+                break;
+
+            case "Matrimonial":
+                arrayList_name = new ArrayList<>();
+                arrayList_name.add("Shaadi.com");
+                arrayList_name.add("Jeevan Sathi");
+                arrayList_name.add("Hindi Matrimony");
+
+                arrayList_url = new ArrayList<>();
+                arrayList_url.add("https://www.shaadi.com/");
+                arrayList_url.add("https://www.jeevansathi.com/");
+                arrayList_url.add("https://www.hindimatrimony.com/");
+
+                arrayList_logo = new ArrayList<>();
+                arrayList_logo.add(R.drawable.shaadi);
+                arrayList_logo.add(R.drawable.jeevansathi);
+                arrayList_logo.add(R.drawable.hindi_matrimony);
+
+                storeGridViewAdapter = new StoreGridViewAdapter(arrayList_logo, arrayList_name);
+                gridView.setAdapter(storeGridViewAdapter);
+                gridViewItemClickListener();
+                break;
+
+            case "News & Magazines":
+                arrayList_name = new ArrayList<>();
+                arrayList_name.add("TOI");
+                arrayList_name.add("NDTV");
+                arrayList_name.add("Dainik Bhaskar");
+
+                arrayList_url = new ArrayList<>();
+                arrayList_url.add("https://timesofindia.indiatimes.com/");
+                arrayList_url.add("https://www.ndtv.com/");
+                arrayList_url.add("https://www.bhaskar.com/");
+
+                arrayList_logo = new ArrayList<>();
+                arrayList_logo.add(R.drawable.toi);
+                arrayList_logo.add(R.drawable.ndtv);
+                arrayList_logo.add(R.drawable.dainik_bhaskar);
+
+                storeGridViewAdapter = new StoreGridViewAdapter(arrayList_logo, arrayList_name);
+                gridView.setAdapter(storeGridViewAdapter);
+                gridViewItemClickListener();
+                break;
+
+            case "Social Media":
+                arrayList_name = new ArrayList<>();
+                arrayList_name.add("Facebook");
+                arrayList_name.add("Instagram");
+                arrayList_name.add("LinkedIn");
+                arrayList_name.add("Pinterest");
+                arrayList_name.add("Reddit");
+                arrayList_name.add("Twitter");
+
+                arrayList_url = new ArrayList<>();
+                arrayList_url.add("https://www.facebook.com/");
+                arrayList_url.add("https://www.instagram.com/");
+                arrayList_url.add("https://in.linkedin.com/");
+                arrayList_url.add("https://in.pinterest.com/");
+                arrayList_url.add("https://www.reddit.com/");
+                arrayList_url.add("https://twitter.com/");
+
+                arrayList_logo = new ArrayList<>();
+                arrayList_logo.add(R.drawable.fb);
+                arrayList_logo.add(R.drawable.instagram);
+                arrayList_logo.add(R.drawable.linkedin);
+                arrayList_logo.add(R.drawable.pinterest);
+                arrayList_logo.add(R.drawable.reddit);
+                arrayList_logo.add(R.drawable.twitter);
+
+                storeGridViewAdapter = new StoreGridViewAdapter(arrayList_logo, arrayList_name);
+                gridView.setAdapter(storeGridViewAdapter);
+                gridViewItemClickListener();
+                break;
+
+            case "Entertainment":
+                arrayList_name = new ArrayList<>();
+                arrayList_name.add("IMDB");
+                arrayList_name.add("ZEE5");
+                arrayList_name.add("Hotstar");
+                arrayList_name.add("JioSaavn");
+                arrayList_name.add("Spotify");
+                arrayList_name.add("Vimeo");
+                arrayList_name.add("Youtube");
+                arrayList_name.add("Youtube Music");
+                arrayList_name.add("Netflix");
+                arrayList_name.add("Prime Video");
+                arrayList_name.add("Sharechat");
+                arrayList_name.add("Gaana");
+
+                arrayList_url = new ArrayList<>();
+                arrayList_url.add("https://www.imdb.com/");
+                arrayList_url.add("https://www.zee5.com/");
+                arrayList_url.add("https://www.hotstar.com/in");
+                arrayList_url.add("https://www.jiosaavn.com/");
+                arrayList_url.add("https://www.spotify.com/in/");
+                arrayList_url.add("https://vimeo.com/");
+                arrayList_url.add("https://www.youtube.com/");
+                arrayList_url.add("https://www.youtube.com/music");
+                arrayList_url.add("https://www.netflix.com/in/");
+                arrayList_url.add("https://www.primevideo.com/");
+                arrayList_url.add("https://sharechat.com/");
+                arrayList_url.add("https://gaana.com/");
+
+                arrayList_logo = new ArrayList<>();
+                arrayList_logo.add(R.drawable.imdb);
+                arrayList_logo.add(R.drawable.zee5);
+                arrayList_logo.add(R.drawable.hotstar);
+                arrayList_logo.add(R.drawable.jiosaavn);
+                arrayList_logo.add(R.drawable.spotify);
+                arrayList_logo.add(R.drawable.vimeo);
+                arrayList_logo.add(R.drawable.youtube);
+                arrayList_logo.add(R.drawable.youtube_music);
+                arrayList_logo.add(R.drawable.netflix);
+                arrayList_logo.add(R.drawable.prime_video);
+                arrayList_logo.add(R.drawable.sharechat);
+                arrayList_logo.add(R.drawable.gaana);
 
                 storeGridViewAdapter = new StoreGridViewAdapter(arrayList_logo, arrayList_name);
                 gridView.setAdapter(storeGridViewAdapter);

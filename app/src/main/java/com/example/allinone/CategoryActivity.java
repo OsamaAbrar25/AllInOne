@@ -29,14 +29,14 @@ import java.util.ArrayList;
 
 public class CategoryActivity extends AppCompatActivity implements CuelinksListener{
     private CategoryGridViewAdapter categoryGridViewAdapter;
-    private CategoryRecyclerViewAdapter categoryRecyclerViewAdapter;
-    private GridLayoutManager gridLayoutManager;
-    private ArrayList<Integer> arrayList_logo;
-    private ArrayList<String> arrayList_name;
+    private CategoryRecyclerViewAdapter categoryRecyclerViewAdapter, categoryRecyclerViewAdapter2;
+    private GridLayoutManager gridLayoutManager, gridLayoutManager2;
+    private ArrayList<Integer> arrayList_logo, arrayList_logo2;
+    private ArrayList<String> arrayList_name, arrayList_name2;
     private ArrayList<Integer> arrayList_logo_trending;
     private ArrayList<String> arrayList_name_trending, arrayList_url_trending;
     private RecyclerView gridView;
-    private RecyclerView recyclerView;
+    private RecyclerView recyclerView_trending, recyclerView_utility;
     private LinearLayoutManager linearLayoutManager;
     private TrendingRecyclerViewAdapter trendingRecyclerViewAdapter;
     private Toolbar toolbar;
@@ -52,7 +52,8 @@ public class CategoryActivity extends AppCompatActivity implements CuelinksListe
 
         Cuelinks.initialize(this);
         gridView = findViewById(R.id.gridView);
-        recyclerView = findViewById(R.id.recyclerView_trending);
+        recyclerView_trending = findViewById(R.id.recyclerView_trending);
+        recyclerView_utility = findViewById(R.id.recyclerView_utilities);
         toolbar = findViewById(R.id.toolbar_category);
 
         //
@@ -91,9 +92,9 @@ public class CategoryActivity extends AppCompatActivity implements CuelinksListe
         trendingList();
         trendingRecyclerViewAdapter = new TrendingRecyclerViewAdapter(arrayList_name_trending, arrayList_logo_trending, arrayList_url_trending);
         linearLayoutManager = new LinearLayoutManager(getApplication(), LinearLayoutManager.HORIZONTAL, false);
-        recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setAdapter(trendingRecyclerViewAdapter);
-        recyclerView.setNestedScrollingEnabled(true);
+        recyclerView_trending.setLayoutManager(linearLayoutManager);
+        recyclerView_trending.setAdapter(trendingRecyclerViewAdapter);
+        recyclerView_trending.setNestedScrollingEnabled(true);
 
         prepareList();
         //categoryGridViewAdapter = new CategoryGridViewAdapter(arrayList_logo, arrayList_name);
@@ -103,6 +104,14 @@ public class CategoryActivity extends AppCompatActivity implements CuelinksListe
         gridView.setAdapter(categoryRecyclerViewAdapter);
         //gridView.setHasFixedSize(true);
         gridView.setNestedScrollingEnabled(false);
+
+        utilityList();
+        categoryRecyclerViewAdapter2 = new CategoryRecyclerViewAdapter(arrayList_logo2, arrayList_name2);
+        gridLayoutManager2 = new GridLayoutManager(CategoryActivity.this, 3);
+        recyclerView_utility.setLayoutManager(gridLayoutManager2);
+        recyclerView_utility.setAdapter(categoryRecyclerViewAdapter2);
+        //gridView.setHasFixedSize(true);
+        recyclerView_utility.setNestedScrollingEnabled(false);
 
 
         /*gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -174,13 +183,12 @@ public class CategoryActivity extends AppCompatActivity implements CuelinksListe
         arrayList_logo_trending.add(R.drawable.firstcry);
         arrayList_logo_trending.add(R.drawable.snapdeal);
 
-
     }
 
     private void prepareList() {
         arrayList_name = new ArrayList<>();
         arrayList_name.add("Popular Stores");
-        arrayList_name.add("Shopping Stores");
+        //arrayList_name.add("Shopping Stores");
         arrayList_name.add("Meat & Dairy");
         arrayList_name.add("Men's Store");
         arrayList_name.add("Women's Store");
@@ -202,9 +210,10 @@ public class CategoryActivity extends AppCompatActivity implements CuelinksListe
         arrayList_name.add("Flowers & Gifts");
         arrayList_name.add("Services & Repairs");
 
+
         arrayList_logo = new ArrayList<>();
         arrayList_logo.add(R.drawable.popular_store);
-        arrayList_logo.add(R.drawable.shopping_store);
+        //arrayList_logo.add(R.drawable.shopping_store);
         arrayList_logo.add(R.drawable.meat);
         arrayList_logo.add(R.drawable.men);
         arrayList_logo.add(R.drawable.women);
@@ -225,6 +234,25 @@ public class CategoryActivity extends AppCompatActivity implements CuelinksListe
         arrayList_logo.add(R.drawable.train);
         arrayList_logo.add(R.drawable.flower);
         arrayList_logo.add(R.drawable.service);
+
+    }
+
+    public void utilityList() {
+        arrayList_name2 = new ArrayList<>();
+        arrayList_name2.add("Social Media");
+        arrayList_name2.add("Entertainment");
+        arrayList_name2.add("News & Magazines");
+        arrayList_name2.add("Matrimonial");
+        arrayList_name2.add("Finance & Stocks");
+        arrayList_name2.add("Cricket & Sports");
+
+        arrayList_logo2 = new ArrayList<>();
+        arrayList_logo2.add(R.drawable.social_media);
+        arrayList_logo2.add(R.drawable.entertainment);
+        arrayList_logo2.add(R.drawable.news_magzines);
+        arrayList_logo2.add(R.drawable.matrimonial);
+        arrayList_logo2.add(R.drawable.finance_stocks);
+        arrayList_logo2.add(R.drawable.cricket_sports);
     }
 
     @Override
