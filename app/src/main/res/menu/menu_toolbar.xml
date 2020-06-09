@@ -2,12 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/policy_menu"
-        android:orderInCategory="100"
-        android:title="@string/privacypolicy"
-        app:showAsAction="never" />
-    <item
         android:id="@+id/share"
+        android:icon="@drawable/share"
         android:title="@string/share_this_app"
+        app:showAsAction="always"
         />
+
+    <item
+        android:id="@+id/policy_menu"
+        android:icon="@drawable/info"
+        android:title="@string/privacypolicy"
+        app:showAsAction="never"
+         />
+
 </menu>
+
+

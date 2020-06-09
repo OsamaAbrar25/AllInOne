@@ -5,28 +5,27 @@
     android:id="@+id/gridLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e5e5e5"
+    android:background="@color/colorWhite"
     tools:context=".CategoryActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_store"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:layout_column="0"
         app:layout_constraintBottom_toTopOf="@+id/gridView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_row="1" />
+        />
 
     <GridView
         android:id="@+id/gridView2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="#e5e5e5"
         android:horizontalSpacing="1dp"

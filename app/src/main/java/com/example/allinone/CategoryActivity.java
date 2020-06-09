@@ -14,12 +14,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Toast;
 
 import com.cuelinks.Cuelinks;
@@ -58,7 +55,7 @@ public class CategoryActivity extends AppCompatActivity implements CuelinksListe
 
         //
 
-        RateThisApp.init(new RateThisApp.Config(3, 5));
+        RateThisApp.init(new RateThisApp.Config(3, 3));
 
         // Set callback (optional)
         RateThisApp.setCallback(new RateThisApp.Callback() {
@@ -212,28 +209,28 @@ public class CategoryActivity extends AppCompatActivity implements CuelinksListe
 
 
         arrayList_logo = new ArrayList<>();
-        arrayList_logo.add(R.drawable.popular_store);
+        arrayList_logo.add(R.drawable.popular2);
         //arrayList_logo.add(R.drawable.shopping_store);
-        arrayList_logo.add(R.drawable.meat);
-        arrayList_logo.add(R.drawable.men);
-        arrayList_logo.add(R.drawable.women);
-        arrayList_logo.add(R.drawable.mom);
-        arrayList_logo.add(R.drawable.health);
-        arrayList_logo.add(R.drawable.movie);
-        arrayList_logo.add(R.drawable.travel);
-        arrayList_logo.add(R.drawable.hotel);
-        arrayList_logo.add(R.drawable.recharge);
-        arrayList_logo.add(R.drawable.bus);
-        arrayList_logo.add(R.drawable.cabs);
-        arrayList_logo.add(R.drawable.online_food);
-        arrayList_logo.add(R.drawable.pizza_n_cafe);
-        arrayList_logo.add(R.drawable.grocery);
-        arrayList_logo.add(R.drawable.decor);
-        arrayList_logo.add(R.drawable.beauty);
-        arrayList_logo.add(R.drawable.flight);
-        arrayList_logo.add(R.drawable.train);
-        arrayList_logo.add(R.drawable.flower);
-        arrayList_logo.add(R.drawable.service);
+        arrayList_logo.add(R.drawable.meat2);
+        arrayList_logo.add(R.drawable.men2);
+        arrayList_logo.add(R.drawable.women2);
+        arrayList_logo.add(R.drawable.mom2);
+        arrayList_logo.add(R.drawable.health2);
+        arrayList_logo.add(R.drawable.movies2);
+        arrayList_logo.add(R.drawable.travel2);
+        arrayList_logo.add(R.drawable.hotel2);
+        arrayList_logo.add(R.drawable.recharge2);
+        arrayList_logo.add(R.drawable.bus2);
+        arrayList_logo.add(R.drawable.cab2);
+        arrayList_logo.add(R.drawable.online_food2);
+        arrayList_logo.add(R.drawable.pizza2);
+        arrayList_logo.add(R.drawable.grocery2);
+        arrayList_logo.add(R.drawable.decor2);
+        arrayList_logo.add(R.drawable.beauty2);
+        arrayList_logo.add(R.drawable.flights2);
+        arrayList_logo.add(R.drawable.train2);
+        arrayList_logo.add(R.drawable.gifts2);
+        arrayList_logo.add(R.drawable.service2);
 
     }
 

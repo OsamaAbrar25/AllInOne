@@ -1166,6 +1166,27 @@ public class StoreActivity extends AppCompatActivity {
                 gridViewItemClickListener();
                 break;
 
+            case "Finance & Stocks":
+                arrayList_name = new ArrayList<>();
+                arrayList_name.add("Moneycontrol");
+                arrayList_name.add("Moneyrediff");
+                arrayList_name.add("Investing.com");
+
+                arrayList_url = new ArrayList<>();
+                arrayList_url.add("https://www.moneycontrol.com/");
+                arrayList_url.add("https://money.rediff.com/index.html");
+                arrayList_url.add("https://www.investing.com/");
+
+                arrayList_logo = new ArrayList<>();
+                arrayList_logo.add(R.drawable.moneycontrol);
+                arrayList_logo.add(R.drawable.moneyrediff);
+                arrayList_logo.add(R.drawable.investingdotcom);
+
+                storeGridViewAdapter = new StoreGridViewAdapter(arrayList_logo, arrayList_name);
+                gridView.setAdapter(storeGridViewAdapter);
+                gridViewItemClickListener();
+                break;
+
             default:
                 Toast.makeText(this, "No stores found!", Toast.LENGTH_LONG).show();
         }
