@@ -1,5 +1,7 @@
 package com.example.allinone;
 
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,13 +44,22 @@ public class CategoryRecyclerViewAdapter extends RecyclerView.Adapter<CategoryRe
     public class CategoryRecyclerViewHolder extends RecyclerView.ViewHolder {
         private ImageView imageView;
         private TextView textView;
-        public CategoryRecyclerViewHolder(@NonNull View itemView) {
+        public CategoryRecyclerViewHolder(@NonNull final View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.imageView_category);
             textView = itemView.findViewById(R.id.textView_category);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+
+                            Intent intent = new Intent(itemView.getContext(), StoreActivity.class);
+                            //Object object = parent.getAdapter().getItem(position);
+                            Object object = textView.getText();
+                            String name = object.toString();
+                            Log.e("name", name);
+                            intent.putExtra("name", name);
+                            itemView.getContext().startActivity(intent);
 
                 }
             });

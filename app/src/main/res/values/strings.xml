@@ -2,4 +2,5 @@
     <string name="app_name">Tapfo</string>
     <string name="privacypolicy">Privacy Policy</string>
     <string name="share_this_app">Share this app</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
 </resources>

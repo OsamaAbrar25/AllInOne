@@ -20,7 +20,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.Toast;
 
 import com.cuelinks.Cuelinks;
@@ -53,7 +52,7 @@ public class CategoryActivity extends AppCompatActivity implements CuelinksListe
 
         Cuelinks.initialize(this);
         gridView = findViewById(R.id.gridView);
-        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recyclerView_trending);
         toolbar = findViewById(R.id.toolbar_category);
 
         //

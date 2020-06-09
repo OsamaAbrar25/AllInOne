@@ -1,5 +1,7 @@
 package com.example.allinone;
 
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,6 +53,7 @@ public class CategoryGridViewAdapter extends BaseAdapter {
             textView = convertView.findViewById(R.id.textView_category);
             imageView = convertView.findViewById(R.id.imageView_category);
         imageView.setImageResource(arrayList_logo.get(position));
+
 
         textView.setText(arrayList_name.get(position));
         return convertView;
