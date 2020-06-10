@@ -31,7 +31,8 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/colorPrimary"
                 android:minHeight="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme"
+                android:theme="@style/ToolbarStyle"
+                style="@style/ToolbarStyle"
 
                 app:layout_constraintBottom_toTopOf="@+id/nestedScrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +42,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/clayout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout"
@@ -95,9 +96,10 @@
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/gridView"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:background="#e5e5e5"
                         android:horizontalSpacing="1dp"
+                        android:nestedScrollingEnabled="false"
                         android:numColumns="3"
                         android:stretchMode="columnWidth"
                         android:verticalSpacing="1dp"
@@ -142,6 +144,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#e5e5e5"
+                        android:nestedScrollingEnabled="false"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"

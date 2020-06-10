@@ -7,6 +7,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 public class StoreGridViewAdapter extends BaseAdapter {
@@ -48,7 +50,12 @@ public class StoreGridViewAdapter extends BaseAdapter {
         }
         viewHolder.textView = convertView.findViewById(R.id.textView_store);
         viewHolder.imageView = convertView.findViewById(R.id.imageView_store);
-        viewHolder.imageView.setImageResource(arrayList_logo.get(position));
+        Picasso.get()
+                .load(arrayList_logo.get(position))
+                .resize(500, 500)
+                //.centerCrop()
+                .into(viewHolder.imageView);
+        //viewHolder.imageView.setImageResource(arrayList_logo.get(position));
 
         viewHolder.textView.setText(arrayList_name.get(position));
         return convertView;

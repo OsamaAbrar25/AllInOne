@@ -15,7 +15,7 @@
         android:layout_marginBottom="2dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+        android:theme="@style/ToolbarStyle"
         app:layout_constraintBottom_toTopOf="@+id/gridView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

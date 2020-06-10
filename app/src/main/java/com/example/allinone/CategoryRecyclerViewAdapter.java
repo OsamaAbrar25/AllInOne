@@ -11,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 public class CategoryRecyclerViewAdapter extends RecyclerView.Adapter<CategoryRecyclerViewAdapter.CategoryRecyclerViewHolder> {
@@ -32,7 +34,12 @@ public class CategoryRecyclerViewAdapter extends RecyclerView.Adapter<CategoryRe
 
     @Override
     public void onBindViewHolder(@NonNull CategoryRecyclerViewHolder holder, int position) {
-        holder.imageView.setImageResource(arrayList_logo.get(position));
+        Picasso.get()
+                .load(arrayList_logo.get(position))
+                .resize(500, 500)
+                //.centerCrop()
+                .into(holder.imageView);
+        //holder.imageView.setImageResource(arrayList_logo.get(position));
         holder.textView.setText(arrayList_name.get(position));
     }
 
