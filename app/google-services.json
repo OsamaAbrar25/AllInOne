@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "908371786132",
+    "firebase_url": "https://tapfo-9c4e5.firebaseio.com",
+    "project_id": "tapfo-9c4e5",
+    "storage_bucket": "tapfo-9c4e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908371786132:android:1a74b49553ce9485eeb781",
+        "android_client_info": {
+          "package_name": "com.example.allinone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908371786132-bqiiftrg4art1vrt0cuvi29cs671petj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.allinone",
+            "certificate_hash": "8bf26821451539bd45095ff5d5fdfa245e2559f8"
+          }
+        },
+        {
+          "client_id": "908371786132-kqbvm4cbrom04pqhabr06h0gjg6q9rfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrSAP4mvoc_2j7PgRujiQMCFbY51hpxy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908371786132-kqbvm4cbrom04pqhabr06h0gjg6q9rfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.allinone">
+    package="com.example.tapfo">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -14,24 +14,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".PolicyActivity"></activity>
-        <activity android:name=".SplashActivity">
+        <activity android:name="com.example.tapfo.PolicyActivity" />
+        <activity android:name="com.example.tapfo.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StoreActivity" />
-        <activity android:name=".WebViewActivity" />
-        <activity android:name=".CategoryActivity" />
+        <activity android:name="com.example.tapfo.StoreActivity" />
+        <activity android:name="com.example.tapfo.WebViewActivity" />
+        <activity android:name="com.example.tapfo.CategoryActivity" />
 
         <meta-data
             android:name="com.cuelinks.channelId"
-            android:value="74406" />
+            android:value="87092" />
         <meta-data
             android:name="com.cuelinks.subId"
-            android:value="campaign test, source, abc, xyz, qwerty" />
+            android:value="Tapfoapp" />
     </application>
 
 </manifest>
